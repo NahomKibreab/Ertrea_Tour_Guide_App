@@ -1,60 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.nknahom.tourguideapp.MainActivity">
 
-    <TextView
-        android:id="@+id/city"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:gravity="center"
-        android:text="City"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
 
-    <TextView
-        android:id="@+id/resturant"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="Resturants"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/city" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </androidx.viewpager.widget.ViewPager>
 
-    <TextView
-        android:id="@+id/ethinc"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="Ethnics"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resturant" />
+</LinearLayout>
 
-    <TextView
-        android:id="@+id/historic"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="Historic Sites"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ethinc" />
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MainActivity">-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/city"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="City"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.060000002" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/resturant"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="Resturants"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/city" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ethinc"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="Ethnics"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/resturant" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/historic"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="Historic Sites"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ethinc" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

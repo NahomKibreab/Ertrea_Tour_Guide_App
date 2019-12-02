@@ -9,10 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HistoryActivity"></activity>
-        <activity android:name=".EthincsActivity" />
-        <activity android:name=".ResturantActivity" />
-        <activity android:name=".CityActivity" />
+        <activity android:name=".HistoryActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".EthincsActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".ResturantActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity android:name=".CityActivity" android:parentActivityName=".MainActivity">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
