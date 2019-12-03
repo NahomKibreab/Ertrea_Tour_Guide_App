@@ -1,7 +1,6 @@
 package com.nknahom.tourguideapp;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,12 +29,13 @@ public class LocationAdapter extends ArrayAdapter<Location> {
                     R.layout.location_layout, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the {@link Location} object located at this position in the list
         Location location = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the location_layout.xml layout with the ID city_name
         TextView cityName = listItemView.findViewById(R.id.city_name);
-        // Get the version name from the current AndroidFlavor object and
+
+        // Get the city name or title name from the current Location object and
         // set this text on the name TextView
         if (location.hasCity()){
             cityName.setText(location.getCity());
@@ -52,10 +52,10 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         }
 
 
-        // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-        ImageView imageView = listItemView.findViewById(R.id.city_image);
+        // Find the ImageView in the location_layout.xml layout with the ID image_view
+        ImageView imageView = listItemView.findViewById(R.id.image_view);
 
-        // Check if an image is provided for this word or not
+        // Check if an image is provided for this Location or not
         if (location.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
             imageView.setImageResource(location.getImage());
@@ -72,13 +72,17 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         TextView phoneNumber = listItemView.findViewById(R.id.phone);
 
         if (location.hasPhone()){
-            phoneNumber.setText(location.getPhone());
-            phoneNumber.setVisibility(View.VISIBLE);
+            if (location.getPhone().isEmpty()){
+                phoneNumber.setVisibility(View.GONE);
+            } else {
+                phoneNumber.setText(location.getPhone());
+                phoneNumber.setVisibility(View.VISIBLE);
+            }
+
         } else {
             phoneNumber.setVisibility(View.GONE);
         }
-        // Return the whole list item layout (containing 2 TextViews and an ImageView)
-        // so that it can be shown in the ListView
+
         return listItemView;
     }
 }

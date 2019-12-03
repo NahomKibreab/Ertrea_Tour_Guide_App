@@ -35,11 +35,11 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new CityFragment();
         } else if (position == 1) {
-            return new ResturantFragment();
+            return new HotelFragment();
         } else if (position == 2) {
             return new EthnicsFragment();
         } else {
-            return new HistoryFragment();
+            return new LegacyFragment();
         }
     }
 

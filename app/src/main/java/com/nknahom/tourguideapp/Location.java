@@ -1,7 +1,5 @@
 package com.nknahom.tourguideapp;
 
-import androidx.annotation.NonNull;
-
 public class Location {
     private String name;
     private String city;
@@ -10,7 +8,7 @@ public class Location {
     private String phone;
 
     /** Image resource ID for the location */
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private int mImageResourceId;
 
     /** Constant value that represents no image was provided for this location */
     private static final int NO_IMAGE_PROVIDED = -1;
@@ -60,7 +58,7 @@ public class Location {
     }
 
     /**
-     * Returns whether or not there is an image for this word.
+     * Returns whether or not there is an image for this Location.
      */
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
@@ -76,17 +74,5 @@ public class Location {
 
     public boolean hasSubzone(){
         return subzone != null;
-    }
-
-    @NonNull
-    @Override
-    public String toString() {
-        return "Location {" +
-                "Name: " + name +
-                ", City: " + city +
-                ", Description: " + description +
-                ", Image ID: " + mImageResourceId +
-                ", Phone: " + phone +
-                '}';
     }
 }
