@@ -23,11 +23,14 @@ public class CityFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         ArrayList<Location> cities = new ArrayList<>();
-        cities.add(new Location("Asmara","Is the capital city of Eritrea.",R.drawable.asmara));
-        cities.add(new Location("Asmara","Is the capital city of Eritrea.",R.drawable.asmara));
-        cities.add(new Location("Asmara","Is the capital city of Eritrea.",R.drawable.asmara));
-        cities.add(new Location("Asmara","Is the capital city of Eritrea.",R.drawable.asmara));
-        cities.add(new Location("Asmara","Is the capital city of Eritrea.",R.drawable.asmara));
+        cities.add(new Location(getString(R.string.asmara),getString(R.string.desc_asmara),R.drawable.asmara));
+        cities.add(new Location(getString(R.string.massawa),getString(R.string.desc_massawa),R.drawable.massawa));
+        cities.add(new Location(getString(R.string.keren),getString(R.string.desc_keren),R.drawable.keren));
+        cities.add(new Location(getString(R.string.adi_keyh),getString(R.string.desc_adi_keyh),R.drawable.adikeyh));
+        cities.add(new Location(getString(R.string.dekemhare),getString(R.string.desc_dekemhare),R.drawable.dekemhare));
+        cities.add(new Location(getString(R.string.segheneyti),getString(R.string.desc_segheneyti),R.drawable.segheneyti));
+        cities.add(new Location(getString(R.string.ghinda),getString(R.string.desc_ghinda),R.drawable.ghinda));
+        cities.add(new Location(getString(R.string.assab),getString(R.string.desc_assab),R.drawable.assab));
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), cities);
 

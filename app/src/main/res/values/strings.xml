@@ -4,4 +4,20 @@
     <string name="hotel">Hotels</string>
     <string name="ethnics">Ethnics</string>
     <string name="legacy">Legacy</string>
+    <string name="asmara">Asmara</string>
+    <string name="desc_asmara">Asmara is the capital city of Eritrea, a country in the Horn of Africa. It\'s known for its Italian colonial buildings, like the Catholic Cathedral. The city\'s eclectic architecture ranges from art deco cinemas to the Futurist, airplane-shaped Fiat Tagliero service station. The grand former governor\'s palace dates from the 19th century. Close by is the ornate Opera House, built in the early 1900s in a mix of styles.</string>
+    <string name="massawa">Massawa</string>
+    <string name="desc_massawa">Massawa is a port city in Eritrea, on Africa\'s Red Sea coast. In the old town, on Massawa Island, a mix of Italian, Egyptian and Ottoman architecture reflects the city\'s colorful history. On nearby Taulud Island, notable buildings include the crumbling, war-damaged Imperial Palace and St. Mariam Cathedral. Near the cathedral, 3 tanks form a monument commemorating those who died in Eritrea\'s civil wars.</string>
+    <string name="keren">Keren</string>
+    <string name="desc_keren">Keren, also spelled Cheren, and historically known as Sanhit, is the second-largest city in Eritrea. It is situated around 91 kilometres northwest of Asmara at an elevation of 1,390 metres above sea-level. The city sprawls on a wide basin surrounded by granitic mountains on all sides.</string>
+    <string name="adi_keyh">Adi Keyh</string>
+    <string name="desc_adi_keyh">Adi Keyh is a market town in Eritrea, lying approximatively 110 kilometers southeast of Asmara. It lies almost 2,500 metres above sea level and has a population of around 40,000 people. They speak Tigrinya and saho. The ruins of Qohaito and Toconda lie near the town.</string>
+    <string name="dekemhare">Dekemhare</string>
+    <string name="desc_dekemhare">Dekemhare is a town in Eritrea, lying south east of Asmara. Developed by the Italians as an industrial center, it became a large scale industrial and transportation city, known for its vineyards but was largely destroyed in the Eritrean War of Independence.</string>
+    <string name="segheneyti">Segheneyti</string>
+    <string name="desc_segheneyti">Segheneytī is a small town in the Southern Region of Eritrea. The town lies on the road between Asmara and Senafe. Saho, Tigre and Tigrigna ethnic groups live in it. Islam and christianity are predominant.</string>
+    <string name="ghinda">Gīnda</string>
+    <string name="desc_ghinda">Ghinda is a town in the Northern Red Sea region of Eritrea. It is situated in the Ghinda Subregion, and lies between Asmara and Massawa.Ghinda is a major fruit and vegetable growing area and a centre for Tigre Muslims. It lies near the springs of Sabarguma. The citrus plantations were originally planted by Carlo Cavanna, an Italian from Centenaro who directed the construction of the Eritrean Railway, the first railway in Italian Eritrea.</string>
+    <string name="assab">Āssab</string>
+    <string name="desc_assab">Assab or Aseb is a port city in the Southern Red Sea Region of Eritrea. It is situated on the west coast of the Red Sea. Languages spoken in Assab are predominantly Afar, Tigrinya, and Arabic.n 1989, Assab had a population of 39,600 inhabitants. It possessed an oil refinery, which was shut down in 1997 for economic reasons. Until 1998, Ethiopia used Assab as port to process 2/3rd of its trade with the world. Ever since and due to closed borders between Eritrea and Ethiopia, both the port and the port town lost most of their relevance.</string>
 </resources>
